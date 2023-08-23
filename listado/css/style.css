@@ -341,4 +341,11 @@ footer{
     #fo {
         flex-direction: column;
     }
+
+    #cajP1 {
+        margin-left: -14px;
+        }
+        .Pcaj {
+        width: 152px;
+        }
 }

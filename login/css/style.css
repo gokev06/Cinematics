@@ -183,3 +183,13 @@ nav{
     }
     
 }
+
+@media screen and (max-width:480px){
+    .cajas_trasera center{
+        font-size: 35px;
+    }
+
+    .login_registro form{
+        width: 300px;
+    }
+}
