@@ -16,7 +16,7 @@ header{
     padding: 1%;
 }
 .logoA {
-    width: 38%;
+    width: 200px;
     height: 100px;
     border-radius: 56%;
 }
@@ -137,7 +137,7 @@ header a:hover{
 #cajP1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin-left: 100px;
 
 }
 .imagen-hover{
@@ -154,14 +154,15 @@ header a:hover{
     font-size: 14px;
 }
 .Pcaj{
-    width: 14%;
-    height: 320px;
+    width: 200px;
+    height: 300px;
     /* border: 2px solid seagreen; */
     text-align: center;
     font-size: 17px;
     font-family:'Times New Roman';
     margin: 30px 10px 30px;
     color: aliceblue;
+    margin-top: 70px;
 }
 .parr{
     color: rgb(255, 210, 210);
@@ -244,6 +245,10 @@ header a:hover{
     /* box-shadow: 0px 0px 8px #261416c0; */
 } 
 
+footer{
+    margin-top: 50px;
+}
+
 #fo{
     background: linear-gradient(to right, rgba(58, 2, 2, 0.944) 20%, rgba(36, 2, 2, 0.949) 60%);
     display: flex;
@@ -256,3 +261,84 @@ header a:hover{
     text-align: center;
 }
 
+
+@media screen  and (max-width:920px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #hea {
+        width: 79%;
+    }
+
+    #bus {
+        margin-top: 30px;
+        width: 42%;
+        }
+    
+    .modal-content{
+        flex-direction: column;
+    }
+}
+
+
+@media screen  and (max-width:768px){
+
+    .A {
+        width: 60%;
+    }
+
+    .contenedor-imagen {
+        margin: 10px;
+        margin: 21px;
+    }
+
+    #hea {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 90%;
+        }
+}
+
+@media screen  and (max-width:480px){
+    #hea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a:hover {
+        width: 65%;
+    }
+
+    .active {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .Pcaj {
+        width: 156px;
+        height: 241px;
+        }
+
+    iframe{
+        width: 100%;
+
+    }
+
+    .modal-container p{
+        font-size: 13px;
+    }
+
+    .A {
+        width: 80%;
+    }
+
+    #fo {
+        flex-direction: column;
+    }
+}
