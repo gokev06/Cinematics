@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../busqueda/jquery-3.7.0.min.js"></script>
+    <title>Cinematics</title>
+</head>
+<body>
+    <header>
+        <div class="A">
+            <img class="logoA" src="../image/logoF.png">
+            <h1 id="cine">Cinematics</h1>
+        </div>
+        <div id="hea">
+            <a  class="active"href="../Pag_Peliculas/index.html">MENÚ PRINCIPAL</a>
+
+            <a class="active" href="./peliculas.html">PELICULAS</a>
+            <a class="active" href="./series.html">SERIES</a>
+        </div>
+        <div id="bus">
+            <form action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="Heading" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                <input class="form-control col-md-7" id="input_buscar" name="busqueda" style="margin:0px" type="search" placeholder="Buscar...">
+            </form>
+        </div>
+    </header>
+<!-- MENU -->
+    <nav>
+     <section>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">GÉNEROS</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" class="itemcategoria" category="all">Mostrar todo</a>
+                <a href="#" class="itemcategoria" category="terror">Terror</a>
+                <a href="#" class="itemcategoria" category="comedia">Comedia</a>
+                <a href="#" class="itemcategoria" category="romance">Romance</a>
+                <a href="#" class="itemcategoria" category="suspenso">Suspenso</a>
+                <a href="#" class="itemcategoria" category="drama">Drama</a>
+                <a href="#" class="itemcategoria" category="accion">Accion</a>
+                <a href="#" class="itemcategoria" category="fantasia">Fantasia</a>
+            </div>
+        </div>    
+        <section>
+            <div id="cajP1">
+                <div class="Pcaj" category="terror">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/ameri.webp" alt="Imagen 1" class="imagen-hover">
+                    <p class="sip">American Horror Story</p>
+                    <button class="modal-button" data-modal="modal1">Más+</button>
+                    <div class="modal-container" id="modal1" >
+                        <div class="modal-content">
+                        <div>
+                            <p>Esta temporada titulada American Horror Story: Murder House gira en torno a la casa que eligen los Harmon para alojarse en Los Ángeles. Es antigua, tétrica y cuenta con un sótano en el que hay una malvada criatura. Ben (Dylan McDermott) es un sensible terapeuta que lleva una vida normal hasta que un oscuro secreto le obliga mudarse a Los Ángeles junto a su familia, su mujer Vivien (Connie Britton) y su hija Violet (Taissa Farmiga) Entre el resto de personajes de la casa se encuentran una ama de llaves (Frances Conroy), una vecina fisgona llamada Constance (Jessica Lange), un hombre medio quemado que responde al nombre de Larry (Denis O'Hare) y un paciente peligroso de Ben, Tate (Evan Peters) en el que se fija su hija Violet.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/reP8VFF3KHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">American Horror Story</p>
+                            <p class="par">11 Temporadas<br>Terror, Antología<br>Estrenada en 2011<br>Creada por Brad Falchuk, Ryan Murphy<br>Reparto Emma Roberts<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/anne.jpg" alt="Imagen 2" class="imagen-hover">
+                    <p class="sip">Anne with an E</p>
+                    <button class="modal-button" data-modal="modal2">Más+</button>
+                    <div class="modal-container" id="modal2">
+                        <div class="modal-content">
+                        <div>
+                            <p>Anne Shirley es una niña huérfana que vive en un pequeño pueblo llamado Avonlea que pertenece a la Isla del Príncipe Eduardo, en el año 1890. Después de una infancia difícil, donde fue pasando de orfanato a hogares de acogida, es enviada por error a vivir con una solterona y su hermano. Cuando cumple 13 años, Anne va a conseguir transformar su vida y el pequeño pueblo donde vive gracias a su fuerte personalidad, intelecto e imaginación. Netflix y CBC están uniendo fuerzas con Northwood Entertainment para llevar a cabo la serie Anne, basada en la novela Anne of Green Gables de Lucy Maud Montgomery.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/M4T-_aB8smU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Anne with an E</p>
+                            <p class="par">3 Temporada<br>Drama<br>Estrenada en 2017<br>Creada por Moira Walley-Beckett<br>Reparto Amybeth McNulty, Geraldine James, Lucas Jade<br>Nacionalidad Canadá</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen" class="imagen-hover" >
+                    <img src="./imgS/bett.jpg" alt="Imagen 3" class="imagen-hover">
+                    <p class="sip">Better Call Sau</p>
+                    <button class="modal-button" data-modal="modal3">Más+</button>
+                    <div class="modal-container" id="modal3">
+                        <div class="modal-content">
+                        <div>
+                            <p>Ambientada en 2002, seis años antes de los acontecimientos relatadas en Breaking Bad, Better Call Saul es un spin-off centrado en el personaje de James 'Jimmy' McGuill (Bob Odenkirk), antes de que asuma la identidad de Saul Goodman, un abogado corrupto con un humor políticamente incorrecto vinculado al mundo criminal que empieza a crear una importante red de contactos en los bajos mundos. La serie narra los acontecimientos que llevan a McGuill a convertirse en Saul antes de trabajar con Walter White (Bryan Cranston), más conocido como Heisenberg, el narcotraficante más temido de Nuevo México.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/HN4oydykJFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Better Call Sau</p>
+                            <p class="par">6 Temporada<br>Drama, Crimen<br>Estrenada en 2015<br>Creada por Vince Gilligan<br>Reparto Bob Odenkirk, Giancarlo Esposito, Jonathan Banks<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="suspenso">
+                    <div class="contenedor-imagen" class="imagen-hover" >
+                    <img src="./imgS/bla.jpg" alt="Imagen 4" class="imagen-hover">
+                    <p class="sip">Black Mirror</p>
+                    <button class="modal-button" data-modal="modal4">Más+</button>
+                    <div class="modal-container" id="modal4">
+                        <div class="modal-content">
+                        <div>
+                            <p>Black Mirror es una producción británica desarrollada por Charlie Brooker ('Dead set: Muerte en directo'), Una serie de episodios independientes entre sí y, con un reparto y tramas totalmente diferentes, cuyo único punto común es el poder de las nuevas tecnologías para mover el mundo. La ficción distribuida por Netflix hace un análisis de las nuevas tecnologías de una forma avanzada y futurista que en ocasiones amenazan la integridad de las personas.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/C3Hg8qgU4ss?si=4TfQSy7xUixNtaSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Black Mirror</p>
+                            <p class="par">6 Temporada<br>Suspense, Drama<br>Estrenada en 2016<br>Creada por Charlie Brooker<br>Reparto Laura Cairns, Salma Hayek, Josh<br>Nacionalidad Gran Bretaña</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/breaki.jpg" alt="Imagen 5" class="imagen-hover">
+                    <p class="sip">Breaking Bad</p>
+                    <button class="modal-button" data-modal="moda5">Más+</button>
+                    <div class="modal-container" id="modal5">
+                        <div class="modal-content">
+                        <div>
+                            <p>Altamente aclamado por la crítica, este drama televisivo escrito y producido por Vince Gilligan ('Expediente X') nos muestra la vida de Walter White (Bryan Cranston 'Malcolm'), un genio en el campo de la Química cuya existencia está marcada por una enorme frustración tanto a nivel personal como laboral. Hundido por una monótona e insulsa relación con su mujer e incapaz de poner a prueba su brillantez trabajando como profesor de instituto, Walter da un giro radical a su forma de vida cuando descubre que tiene un cáncer terminal.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/Bi3mMWw_cJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Breaking Bad</p>
+                            <p class="par">5 Temporada<br>Drama<br>Estrenada en 2008<br>Creada por Vince Gilligan<br>Reparto Bryan Cranston, Anna Gunn, Aaron Paul<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="fantasia">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/Demon_slater.webp" alt="Imagen 6" class="imagen-hover">
+                    <p class="sip">Demon Slayer</p>
+                    <button class="modal-button" data-modal="modal6">Más+</button>
+                    <div class="modal-container" id="modal6">
+                        <div class="modal-content">
+                        <div>
+                            <p>SEl joven Tanjirou Kamado está muy unido a su familia y, para contribuir a los gastos del día a día, trabaja vendiendo carbón. Su mundo se hunde cuando todos los miembros de su familia son asesinados por un despiadado demonio. Dispuesto a tomarse la venganza por su mano, Tanjirou decide convertirse en un cazador de demonios para poder atrapar al responsable del terrible crimen y para tratar de traer a la vida a su hermana.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/C_pKddExbXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Kimetsu no Yaiba</p>
+                            <p class="par">3 Temporadas <br>Fantasía, Animación<br>Estrenada en 2019<br>Creada por Koyoharu Gotouge<br>Reparto Natsuki Hanae, Akari Kito<br>Nacionalidad Japón</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/sabrina.webp" alt="Imagen 7" class="imagen-hover">
+                    <p class="sip">El Mundo Oculto de Sabrina</p>
+                    <button class="modal-button" data-modal="modal7">Más+</button>
+                    <div class="modal-container" id="modal7">
+                        <div class="modal-content">
+                        <div>
+                            <p>Las escalofriantes aventuras de Sabrina (The Chilling Adventures of Sabrina) es una adaptación de la mítica serie Sabrina, cosas de brujas. Esta vez sigue los orígenes de la bruja adolescente, en la que tiene que hacer frente a su doble naturaleza de bruja y mortal. Tiene por tanto que reconciliar así a sus dos partes desde lo más oscuro de la brujería, pues las fuerzas malignas amenzan a su familia, amigos e, incluso, a la humanidad. Por tanto, Sabrina no quiere ocultarle más a Harvey su origen, por ello le cuenta que nació en el bosque y no en el hospital que reza en su certificado.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/51fOujPcgIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">El Mundo Oculto de Sabrina</p>
+                            <p class="par">4 Temporada<br>Drama, Terror, Fantasía<br>Estrenada en 2018<br>Creada por Roberto Aguirre-Sacasa<br>Reparto Kiernan Shipka, Ross Lynch, Lucy Davis<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/gambito_de_dama.jpg" alt="Imagen 8" class="imagen-hover">
+                    <p class="sip">Gambito de Dama</p>
+                    <button class="modal-button" data-modal="modal8">Más+</button>
+                    <div class="modal-container" id="modal8">
+                            <div class="modal-content">
+                            <div>
+                                <p>Gambito de Dama gira en torno a Beth Harmon, una tímida huérfana de 8 años de edad muy callada y completamente normal. Un día, comienza a jugar al ajedrez y la cambia la vida, ampliando sus sentidos, su pensamiento y dándola la sensación de tener control sobre su vida. Con la práctica, 8 años después, termina participando en un campeonato en Estados Unidos. Las apuestas crecen y su temor al aislamiento también mientras afina sus destrezas de jugadora profesional y, cada vez, la idea de escaparse le parece más atractiva.</p>
+                            </div>
+                            <iframe width="380"  height="255" src="https://www.youtube.com/embed/-BBgzgNgzeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Gambito de Dama</p>
+                            <p class="par">1 Temporada<br>Drama<br>Estrenada en 2020<br>Creada por Scott Frank, Allan Scott<br>Reparto Anya Taylor-Joy, William Horberg<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="accion">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/goth.jpg" alt="Imagen 9" class="imagen-hover">
+                    <p class="sip">Gotham</p>
+                    <button class="modal-button" data-modal="modal9">Más+</button>
+                    <div class="modal-container" id="modal9">
+                        <div class="modal-content">
+                        <div>
+                            <p>Gotham estará ambientada en el universo de Batman que explora el pasado de James Gordon, el jefe de policía de Gotham City, y de los villanos que hicieron famosa a esta ficticia ciudad americana. Todo el mundo conoce el nombre de el Comisario Gordon. Es uno de los mayores enemigos del mundo del crimen, un hombre cuya reputación es sinónimo de ley y orden. ¿Pero qué sabemos sobre la historia de Gordon y su ascenso de novato detective a Comisario de Policía?.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/VwOPA2upeCA?si=ne6Ow0knbtluIqTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
+                        </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Gotham</p>
+                            <p class="par">5 Temporada<br>Acción, Crimen<br>Estrenada en 2014<br>Creada por Bruno Heller<br>Reparto Ben McKenzie, Donal Logue, David Mazouz<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/Greys_anathomy.jpg" alt="Imagen 10" class="imagen-hover">
+                    <p class="sip">Grey's Anatomy</p>
+                    <button class="modal-button" data-modal="modal10">Más+</button>
+                    <div class="modal-container" id="modal10">
+                        <div class="modal-content">
+                        <div>
+                            <p>Meredith Grey es hija de una de las cirujanas más respetadas de la profesión. Ahora, ella quiere seguir los pasos de su madre en el Hospital Grace de Seattle. Grey se presenta como piedra angular de la serie de la que surgirán diferentes conflictos en relación con su amante, el neurocirujano Derek Shepherd; su mejor amiga, la Dra. Cristina Yang, y el resto de los médicos del hospital, especialmente los internos en periodo de prácticas, como Alex Karev, Izzie Stevens o George O'Malley.</b></p>
+                        </div>
+                        <iframe width="380"  height="255" src="https://www.youtube.com/embed/w0mbpwCMsjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Grey's Anatomy </p>
+                            <p class="par">19 Temporada<br>Drama, Médico<br>Estrenada en 2005<br>Creada por Shonda Rhimes<br>Reparto Ellen Pompeo, Chandra Wilson, James Pickens Jr<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/la_casa_de_papel.jpg" alt="Imagen 11" class="imagen-hover">
+                    <p class="sip">La Casa de Papel</p>
+                    <button class="modal-button" data-modal="modal11">Más+</button>
+                    <div class="modal-container" id="modal11">
+                        <div class="modal-content">
+                        <div>
+                            <p>La Casa de Papel narra lo que se espera que sea el atraco perfecto al Museo de la Fábrica Nacional de Moneda y Timbre. La mente que idea este plan es El Profesor, un hombre que recluta a siete personas para llevar a cabo el gran golpe. Tokio es una joven atracadora muy buscada por la policía, Berlín asume el papel de "el cabecilla", Moscú es el experto en perforaciones, Río es "el informático", Nairobi es la falsificadora, Denver es el hijo de Moscú y, como siempre, falta la fuerza bruta: Helsinki y Oslo.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/3y-6iaveY6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">La Casa de Papel</p>
+                            <p class="par">5 Temporada<br>Drama, Acción<br>Estrenada en 2017<br>Creada por Álex Pina<br>Reparto Úrsula Corberó, Álvaro Morte, Pedro Alonso<br>Nacionalidad España</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/alask.jpg" alt="Imagen 12" class="imagen-hover">
+                    <p class="sip">Looking For Alaska</p>
+                    <button class="modal-button" data-modal="modal12">Más+</button>
+                    <div class="modal-container" id="modal12">
+                        <div class="modal-content">
+                        <div>
+                            <p>Looking for Alaska, la adaptación de la obra homónima de John Green Buscando a Alaska, gira en torno a Miles ‘Pudge’ Halter, un joven que abandona la zona de confort que le proporciona su hogar para comenzar un curso en el colegio internado Culver Creek, en Alabama. En su vida no ha ocurrido nada que le parezca interesante, considerando que ha llevado una existencia aburrida. Por ello, está decidido a comenzar un camino que consista en todo lo contrario a ello. Allí, conoce a Alaska, una joven que le ayuda a seguir su propósito: es una muchacha inteligente y divertida a la par que muy atractiva y auto-destructiva.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/7tqex95uXY8?si=kXM6ax0TEYwbYHJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>           
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Looking For Alaska</p>
+                            <p class="par">1 Temporada<br>Drama<br>Estrenada en 2019<br>Creada por Josh Schwartz<br>Reparto Charlie Plummer, Kristine Frøseth, Denny Love<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="fantasia">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/lucifer.webp" alt="Imagen 13" class="imagen-hover">
+                    <p class="sip">Lucifer</p>
+                    <button class="modal-button" data-modal="modal13">Más+</button>
+                    <div class="modal-container" id="modal13">
+                        <div class="modal-content">
+                        <div>
+                            <p>La historia de Lucifer es la que todos conocemos: un ángel caído del cielo. Sin embargo, este señor del infierno está aburrido de su propia existencia. Por ello, Lucifer decide abandonar su reino e ir a la ciudad de Los Ángeles a descubrir qué puede ofrecerle el mundo mortal. En su búsqueda de "qué hacer con su tiempo" decide abrir un distinguido club nocturno, llamado Lux, y se dedica a disfrutar de sus cosas favoritas: el vino, las mujeres y la música.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/X4bF_quwNtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Lucifer</p>
+                            <p class="par">6 Temporada<br>Fantasía, Drama, Crimen<br>Estrenada en 2016<br>Creada por Tom Kapinos<br>Reparto Tom Ellis, D.B. Woodside, Lauren German<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="romance">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/outl.jpg" alt="Imagen 14" class="imagen-hover">
+                    <p class="sip">Outlander</p>
+                    <button class="modal-button" data-modal="modal14">Más+</button>
+                    <div class="modal-container" id="modal14">
+                        <div class="modal-content">
+                        <div>
+                            <p>Basada en la saga de novelas de Diana Gabaldon, Outlander es una serie que mezcla fantasía, historia y romance en los parajes de la Escocia del siglo XVIII. Durante la Segunda Guerra Mundial, Claire, una enfermera casada, vive una experiencia sorprendente. Durante un viaje a Escocia, la joven visita un misterioso círculo de piedras antiguas. Afectada por un misterioso poder, Claire entra en trance para despertar lejos de su marido, su época y la vida que ha conocido hasta ahora. Conducida a la Escocia de 1734, Claire se verá inmersa en un país poblado de distintos clanes, supersticiosos y violentos.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/0ySZRTsi_tU?si=ZBPSYOsjK7He0tW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Outlander</p>
+                            <p class="par">7 Temporada<br>Romántico, Histórico<br>Estrenada en 2014<br>Creada por Ronald D. Moore<br>Reparto Caitriona Balfe, Sam Heughan, Sophie Skelton<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="suspenso">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/ratc.jpg" alt="Imagen 15" class="imagen-hover">
+                    <p class="sip">Ratched</p>
+                    <button class="modal-button" data-modal="modal15">Más+</button>
+                    <div class="modal-container" id="modal15">
+                        <div class="modal-content">
+                        <div>
+                            <p>Ratched es la precuela de la película Alguien voló sobre el nido del cuco (1975), ambientada en la novela homónima de Ken Kesey. La ficción se sitúa en el año 1947 cuando la señorita Ratched se encuentra en plena juventud, una época en la que poco a poco comienza a de evolucionar a la estricta y autoritaria enfermera en un hospital psiquiátrico de Oregón. Mildred llega al norte de California para buscar trabajo en el hospital psiquiátrico Santa Lucía.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/w8McLfsTqhM?si=MEuJR8-MrRZUqINm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Ratched</p>
+                            <p class="par">1 Temporada<br>Suspense, Drama<br>Estrenada en 2020<br>Creada por Evan Romansky, Ryan Murphy<br>Reparto Reparto Sarah Paulson, Cynthia Nixon, Finn Wittrock<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="comedia">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/sex.jpg" alt="Imagen 16" class="imagen-hover">
+                    <p class="sip">Sex Education</p>
+                    <button class="modal-button" data-modal="modal16">Más+</button>
+                    <div class="modal-container" id="modal16">
+                        <div class="modal-content">
+                        <div>
+                            <p>Sex Education gira en torno a Otis, un adolescente calificado como "bicho raro" en el instituto, a lo que se le une el hecho de ser virgen. Sin embargo, este vive con su madre sexóloga, por lo que siempre ha tenido un amplio conocimiento respecto al tema. Todo cambia cuando sus compañeros descubren a qué se dedica su madre, algo que Otis aprovecha para mostrar todo lo que sabe y mejorar su reputación en la escuela, aliándose con Maeve, una chica inteligente pero con mala fama. Así, ambos montan una clínica donde sus compañeros acuden a pedir consejos sobre sus extraños problemas.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/mmksLpityps?si=3SUFHTbMNZACegdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Sex Education</p>
+                            <p class="par">4 Temporada<br>Comedia, Drama<br>Estrenada en 2019<br>Creada por Laurie Nunn<br>Reparto Asa Butterfield, Emma Mackey, Gillian Anderson<br>Nacionalidad Gran Bretaña</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="accion">
+                    <div class="contenedor-imagen" class="imagen-hover" >
+                    <img src="./imgS/shoo.jpg" alt="Imagen 17" class="imagen-hover">
+                    <p class="sip">Shooter El tirador</p>
+                    <button class="modal-button" data-modal="modal17">Más+</button>
+                    <div class="modal-container" id="modal17">
+                        <div class="modal-content">
+                        <div>
+                            <p>Shooter es una serie de televisión de género dramático basada en la novela best-seller Point of Impact, escrita por el autor Stephen Hunter y publicada en el año 1993. Este thriller de suspense narra la historia de Bob Lee Swagger (Ryan Phillippe, Secretos y mentiras), un experto francotirador que, desencantado con la guerra, ahora vive en el exilio, dedicando su día a día a las armas de fuego. Pronto, miembros de una organización gubernamental secreta lo intentan convencer para volver a la acción.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/pAEXOttWpck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Shooter El tirador</p>
+                            <p class="par">3 Temporada<br>Acción, Suspense<br>Estrenada en 2016<br>Creada por John Hlavin<br>Reparto Ryan Phillippe, Shantel VanSanten, Cynthia Addai-Robinson<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="terror">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/sla.jpg" alt="Imagen 18" class="imagen-hover">
+                    <p class="sip">Slasher</p>
+                    <button class="modal-button" data-modal="modal18">Más+</button>
+                    <div class="modal-container" id="modal18">
+                        <div class="modal-content">
+                        <div>
+                            <p>Hace 30 años, los padres de Sarah Bennet fueron asesinados por alguien llamado El verdugo. Ahora, Sarah (Katie McGrath) vuelve Waterbury, el pueblo donde ocurrieron los crímenes, para empezar de cero con su marido Dylan (Brandon Jay McLaren) pero al llegar descubren que las cosas apenas han cambiado en ese tranquilo lugar. O así era hasta su llegada. Casi sin darse cuenta, Sarah se ve involucrada en una serie de crímenes que tienen relación con los siete pecados capitales, y parece que son perpretados por El verdugo. Sin embargo, el asesino original que llevaba ese nombre, Tom Winston, está en prisión así que él no puede ser el culpable.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/ZIqX4A-XT-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Slasher</p>
+                            <p class="par">5 Temporada<br>Terror, Suspense<br>Estrenada en 2016<br>Creada por Aaron Martin<br>Reparto Lisa Berry, Jim Watson, Salvatore Antonio<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="fantasia">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/stra.jpg" alt="Imagen 19" class="imagen-hover">
+                    <p class="sip">Stranger Things</p>
+                    <button class="modal-button" data-modal="modal19">Más+</button>
+                    <div class="modal-container" id="modal19">
+                        <div class="modal-content">
+                        <div>
+                            <p>Han pasado seis meses desde que Once, Will, Mike, Lucas, Dustin, Max, entre otros, protagonizasen la batalla en el centro comercial Starcourt. Ahora, tras la pérdida de Hooper, Once se ha marchado a California junto a los Byers, sin embargo, las criaturas del Mundo del Revés siguen latentes esperando el momento perfecto para salir de nuevo y amenazar al mundo. En esta cuarta temporada surge una nueva y terrorífica amenaza sobrenatural que si el grupo de amigos consigue resolverla podría suponer el verdadero final del Mundo del Revés.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/d0JYlUTbv1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Stranger Things</p>
+                            <p class="par">5 Temporada<br>Fantasía, Suspense<br>Estrenada en 2016<br>Creada por Matt Duffer, Ross Duffer<br>Reparto Winona Ryder, Millie Bobby Brown, David Harbour<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="comedia">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/suit.webp" alt="Imagen 20" class="imagen-hover">
+                    <p class="sip">Suits la Clave del Éxito</p>
+                    <button class="modal-button" data-modal="modal20">Más+</button>
+                    <div class="modal-container" id="modal20">
+                        <div class="modal-content">
+                        <div>
+                            <p>Suits: la clave del éxito' nos cuenta la vida de Mike Ross (Patrick J. Adams, 'FlashForward', 'Luck') y Harvey Specter (Gabriel Macht, 'The Spirit', 'Amor y otras drogas'), dos tipos que no pueden ser más distintos pero a los que el destino une en extrañas circunstancias para convertirlos en mejores personas... y todo, claro, en la ciudad de Nueva York con el mundo del Derecho de fondo y una estética que recuerda a 'Mad Men'.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/Ab2YIbP5xw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Suits la Clave del Éxito</p>
+                            <p class="par">9 Temporada<br>Comedia, Judicial<br>Estrenada en 2011<br>Creada por Aaron Korsh<br>Reparto Gabriel Macht, Patrick J. Adams, Rick Hoffman<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="suspenso">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/rain.webp" alt="Imagen 21" class="imagen-hover">
+                    <p class="sip">The Rain</p>
+                    <button class="modal-button" data-modal="modal21">Más+</button>
+                    <div class="modal-container" id="modal21">
+                        <div class="modal-content">
+                        <div>
+                            <p>The Rain narra la situación de Escandinavia seis años después desde que una gran catástrofe biológica aniquilara a casi toda la población. Dos hermanos deciden llegar al final de esta cuestión, por lo que se unen a un grupo de jóvenes para descubrir si hay un nuevo mundo. En un camino muy peligroso, todos tienen la esperanza de que alguien de fuera tenga todas las respuestas. Jannik Tai Mosholt (Borgen), Esben Toft Jacobsen y Christian Potalivo son los creadores de esta ficción rodada entre Suecia y Dinamarca.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/HMGapZwZO_I?si=rfUIBCAELDa1DZQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="" height="" src="https://www.youtube.com/embed/sfAc2U20uyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">The Rain</p>
+                            <p class="par">3 Temporada<br>Suspense, Drama<br>Estrenada en 2018<br>Creada por Jannik Tai Mosholt, Esben Toft<br>Reparto Alba August, Sonny Lindberg, Lucas Lynggaard Tønnesen<br>Nacionalidad Dinamarca</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="fantasia">
+                    <div class="contenedor-imagen" class="imagen-hover" >
+                    <img src="./imgS/7peca.jpg" alt="Imagen 22" class="imagen-hover">
+                    <p class="sip">The Seven Deadly Sins</p>
+                    <button class="modal-button" data-modal="modal22">Más+</button>
+                    <div class="modal-container" id="modal22">
+                        <div class="modal-content">
+                        <div>
+                            <p>Elizabeth Liones es la tercera princesa del Reino de Liones que decide huir del país tras un golpe de estado. Su misión es buscar a los caballeros que se hacen llamar Los siete pecados capitales, que actualmente están en paradero desconocido por ser considerados los peores criminales del reino. Un día, y tras llevar una Armadura Oxidada. La joven cae desmayada en una taberna y todos los allí presentes creen que es uno de los Sietes Pecados al ver su armadura.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/6ribjsdOeM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">The Seven Deadly Sins</p>
+                            <p class="par">5 Temporada<br>Fantasía, Animación<br>Estrenada en 2014<br>Creada por Shotaro Suga<br>Reparto Yûki Kaji, Misaki Kuno, Sora Amamiya<br>Nacionalidad Japón</p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="Pcaj" category="romance">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/vamp.jpg" alt="Imagen 23" class="imagen-hover">
+                    <p class="sip">The Vampire Diaries</p>
+                    <button class="modal-button" data-modal="modal23">Más+</button>
+                    <div class="modal-container" id="modal23">
+                        <div class="modal-content">
+                        <div>
+                            <p>Esta serie de corte sobrenatural está basada en una serie de novelas homónimas escritas por L.J. Smith (también autora de la saga de 'The Secret Circle'). Como protagonista tenemos a Elena Gilbert (Nina Dobrev, 'Arena'), una joven de 17 años que trata de seguir adelante con su vida tras la pérdida de sus padres en un trágico accidente. La acción de la serie se sitúa en Mystic Falls, un pueblo ficticio localizado en Virginia que, aparentemente, está encantado por seres sobrenaturales. En este misterioso sitio viven, al igual que Elena, los hermanos Salvatore: Stefan (Paul Wesley, 'Army Wives', '24') y Damon (Ian Somerhalder, 'Pérdidos').</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/K3xlHP3LOr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">The Vampire Diaries</p>
+                            <p class="par">8 Temporada<br>Romántico, Fantasía<br>Estrenada en 2009<br>Creada por Julie Plec<br>Reparto Nina Dobrev, Paul Wesley, Ian Somerhalder<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="terror">
+                    <div class="contenedor-imagen">
+                    <img src="./imgS/walki.jpg" alt="Imagen 24" class="imagen-hover">
+                    <p class="sip">The Walking Dead</p>
+                    <button class="modal-button" data-modal="modal24">Más+</button>
+                    <div class="modal-container" id="modal24">
+                        <div class="modal-content">
+                        <div>
+                            <p>La historia de The Walking Dead nos traslada a un escenario post-pandémico en el que un virus ha acabado con la práctica totalidad de la población mundial convirtiéndolos en zombis. Seremos testigo de la lucha de un grupo de supervivientes por mantenerse a salvo en este entorno infestado de zombis o, como ellos prefieren llamarlos, caminantes. Nuestro protagonista, Rick Grimes es un policía que despierta de un estado comatoso y encuentra este desolador panorama. Su única razón para seguir adelante es encontrar a su mujer Lori y a su hijo Carl.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/sfAc2U20uyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">The Walking Dead</p>
+                            <p class="par">11 Temporada<br>Terror, Drama<br>Estrenada en 2010<br>Creada por Glen Mazzara<br>Reparto Andrew Lincoln, Norman Reedus, Melissa McBride<br>Nacionalidad EE.UU.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     <section>
+        <script src="flo.js"></script>       
+        <script src="../busqueda/bus.js"></script> 
+        <script src="../categorias/cate.js"></script>     
+    </section>
+    <footer>
+        <div id="fo">
+           <p>&copy 2023 Future Vision Code</p>
+           <p>FutureVisionCode@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

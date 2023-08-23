@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../busqueda/jquery-3.7.0.min.js"></script>
+    <title>Cinematics</title>
+</head>
+<body>
+    <header>
+        <div class="A">
+            <img class="logoA" src="./image/logoF.png">
+            <h1 id="cine">Cinematics</h1>
+        </div>
+        <div id="hea">
+            <a  class="active"href="./Pag_Peliculas/index.html">MENÚ PRINCIPAL</a>
+            <a class="active" href="./peliculas.html">PELICULAS</a>
+            <a class="active" href="./series.html">SERIES</a>
+        </div>
+        <div id="bus">
+            <form action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="Heading" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                <input class="form-control col-md-7" id="input_buscar" name="busqueda" style="margin:0px" type="search" placeholder="Buscar...">
+            </form>
+        </div>
+
+    </header>
+<!-- MENU -->
+    <nav>
+     <section>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">GÉNEROS</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" class="itemcategoria" category="all">Mostrar todo</a>
+                <a href="#" class="itemcategoria" category="terror">Terror</a>
+                <a href="#" class="itemcategoria" category="comedia">Comedia</a>
+                <a href="#" class="itemcategoria" category="romance">Romance</a>
+                <a href="#" class="itemcategoria" category="suspenso">Suspenso</a>
+                <a href="#" class="itemcategoria" category="drama">Drama</a>
+                <a href="#" class="itemcategoria" category="accion">Accion</a>
+                <a href="#" class="itemcategoria" category="fantasia">Fantasia</a>
+            </div>
+        </div>
+        <section>
+            <div id="cajP1">
+                <div class="Pcaj" category="fantasia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/alicia.jpg" alt="Imagen 1" class="imagen-hover">
+                    <p class="sip">Alicia en el País de las Maravillas</p>
+                    <button class="modal-button" data-modal="modal1">Más+</button>
+                    <div class="modal-container" id="modal1">
+                        <div class="modal-content">
+                        <div>
+                            <p>Alicia (Mia Wasikowska) tiene 19 años y está a punto de recibir una propuesta de matrimonio que no le hace demasiada ilusión, por no decir ninguna. Un día, asiste a una espectacular fiesta en una mansión donde su pretendiente le pedirá la mano púbicamente, y se encuentra llena de vergüenza y frustración. Justo cuando éste está a punto de hacerlo, Alicia sale corriendo tras un conejo blanco y acaba en el País de las Maravillas, un mágico lugar al que ya viajó diez años antes, pero que no recuerda.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/Gyu7zvy8leg?si=p9_RJBOGMWEydXfv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+                        </div>
+                    </div>                              
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Alicia en el País de las Maravillas</p>
+                            <p class="par">1h 48min<br>Fantasía, Aventura<br>Estrenada en 2010<br>Dirigida por Tim Burton<br>Guion Linda Woolverton<br>Reparto Johnny Depp, Mia Wasikowska, Michael Sheen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="terror">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/asi_en_la_tierra_como_en_el_infierno.jpg" alt="Imagen 2" class="imagen-hover">
+                    <p class="sip">Asi en La Tierra Como en El Infierno</p>
+                    <button class="modal-button" data-modal="modal2">Más+</button>
+                    <div class="modal-container" id="modal2">
+                        <div class="modal-content">
+                        <div>
+                            <p>Miles de laberintos se enredan en las catacumbas que se encuentran debajo de las calles de París, el hogar eterno de las innumerables almas. Cuando un equipo de exploradores se adentra en el laberinto desconocido de los huesos, descubrirán aquello que oculta la ciudad de las muertos. Un viaje a la locura y el terror que cala hondo en la psique humana para revelar los demonios personales que nos persiguen a todos.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/QfNSlNzXj4w?si=AfIZz1boGQZk8tYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Asi en La Tierra Como en El Infierno</p>
+                            <p class="par">1h 33min<br>Terror, Suspense<br>Estrenada en 2014<br>Dirigida por John Erick<br>Guion John Erick Dowdle, Drew Dowdle<br>Reparto Perdita Weeks</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="Pcaj" category="fantasia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/avatar.jpg" alt="Imagen 3" class="imagen-hover">
+                    <p class="sip">Avatar El Sentido del Agua</p>
+                    <button class="modal-button" data-modal="modal3">Más+</button>
+                    <div class="modal-container" id="modal3">
+                            <div class="modal-content">
+                            <div>
+                                <p>En Avatar: El sentido del agua, secuela de Avatar (2009), nos trasladamos diez años después de la primera batalla de Pandora entre los Na'vi y los humanos, Jake Sully (Sam Worthington) vive tranquilamente con su familia y su tribu. Él y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos, debido a los problemas matrimoniales y a los roles que cada uno debe que desempeñar dentro de la tribu. Sin embargo, deben abandonar su hogar y explorar diferentes e inhospitas regiones de Pandora, adentrándose en el mar y haciendo pactos con otros Na'vi de dichas regiones.</p>
+                            </div>
+                            <iframe width="380" height="255" src="https://www.youtube.com/embed/jYRtFFa4hT8?si=2UtnmCAnqvm5jwm9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                            </div>
+                        </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Avatar El Sentido del Agua</p>
+                            <p class="par">3h 12min<br>Fantasía, Aventura<br>Estrenada en 2022<br>Dirigida por James Cameron<br>Guion James Cameron<br>Reparto Zoe Saldana, Sam Worthington</p>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="comedia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/barbie.jpg" alt="Imagen 4" class="imagen-hover">
+                    <p class="sip">Barbie</p>
+                    <button class="modal-button" data-modal="modal4">Más+</button>
+                    <div class="modal-container" id="modal4">
+                        <div class="modal-content">
+                        <div>
+                            <p>Esta comedia familiar de aventuras es una adaptación al cine sobre una de las muñecas de juguete más famosas del mundo. Barbie (Margot Robbie) lleva una vida ideal en Barbieland, allí todo es perfecto, con chupi fiestas llenas de música y color, y todos los días son el mejor día. Claro que Barbie se hace algunas preguntas, cuestiones bastante incómodas que no encajan con el mundo idílico en el que ella y las demás Barbies viven. Cuando Barbie se dé cuenta de que es capaz de apoyar los talones en el suelo, y tener los pies planos, decidirá calzarse unos zapatos sin tacones y viajar hasta el mundo real.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/zh4KhVSMwtQ?si=HU36pkiaGYdSKUiP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Barbie</p>
+                            <p class="par">1h 55min<br>Comedia, Familia<br>Estrenada en 2023<br>Dirigida por Greta Gerwig<br>Guion Greta Gerwig, Noah Baumbach<br>Reparto Margot Robbie, Ryan Gosling</p>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="romance">
+                    <div class="contenedor-imagen" class="imagen-hover" >
+                    <img src="./imgP/50.jpg" alt="Imagen 5" class="imagen-hover">
+                    <p class="sip">Cincuenta Sombras Liberadas</p>
+                    <button class="modal-button" data-modal="modal5">Más+</button>
+                    <div class="modal-container" id="modal5">
+                        <div class="modal-content">
+                        <div>
+                            <p>Tercera y última entrega de la trilogía que describe la turbulenta y sensual relación entre la joven Anastasia Steele (Dakota Johnson) y el seductor y exitoso magnate de los negocios Christian Grey (Jamie Dornan). Convencidos de que han dejado atrás las oscuras sombras del pasado, los recién casados Christian y Ana se sumergen en su estrecha relación y disfrutan de su matrimonio rodeados de una lujosa vida en la que Grey pone el mundo a los pies de la joven. Pero justo cuando la pareja empieza acostumbrase a la estabilidad de ser la Sra. y el Sr. Grey, aparecen nuevas amenazas que pondrán su felicidad en peligro.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/Dec6stTA75I?si=V2bkczlzFzEpkQ_Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>                              
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Cincuenta Sombras Liberadas</p>
+                            <p class="par">1h 46min<br>Romántico, Erótico<br>Estrenada en 2018<br>Dirigida por James Foley<br>Guion Niall Leonard<br>Reparto Dakota Johnson, Jamie Dornan, Eric Johnson</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="romance">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/crepusculo.jpg" alt="Imagen 6" class="imagen-hover">
+                    <p class="sip">Twilight</p>
+                    <button class="modal-button" data-modal="modal6">Más+</button>
+                    <div class="modal-container" id="modal6">
+                        <div class="modal-content">
+                        <div>
+                            <p>Isabella Swan, de 17 años, se muda a Forks, una pequeña ciudad lluviosa del estado de Washington, para vivir con su padre. Ella espera que su nueva vida sea tan aburrida como la misma ciudad. Ahora bien, en el instituto, está terriblemente intrigada por el comportamiento de unos hermanos extraños, dos chicas y tres chicos. Bella se enamora perdidamente de uno de ellos, Edward Cullen. Entonces, dará inicio una relación sensual y peligrosa entre los dos jóvenes: cuando Isabella comprende que Edward es un vampiro, ya es demasiado tarde.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/6UTwp0Qv_Sg?si=WKtzR2nsX_brkOar" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        
+                        </div>
+                    </div>                              
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Twilight</p>
+                            <p class="par">2h 10min<br>Romántico, Fantasía<br>Estrenada en 2008<br>Dirigida por Catherine Hardwicke<br>Guion Melissa Rosenberg<br>Reparto Kristen Stewart, Robert Pattinson</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Pcaj" category="comedia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/Deadpool.png" alt="Imagen 7" class="imagen-hover">
+                    <p class="sip">Deadpool</p>
+                    <button class="modal-button" data-modal="modal7">Más+</button>
+                    <div class="modal-container" id="modal7">
+                        <div class="modal-content">
+                        <div>
+                            <p>Después de alistarse en el ejército, Wade Wilson (Ryan Reynolds) comienza a realizar trabajos de mercenario, y acabará siendo agente de las Fuerzas Especiales de EE.UU. Ya retirado, en su vida civil se dedica a ser un "matón a sueldo", ayudando a gente que no puede defenderse por sí sola. Su vida transcurre de forma normal, junto a su novia Vanessa (Morena Baccarin), hasta que llega la terrible noticia de que está gravemente enfermo.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/0JnRdfiUMa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Deadpool</p>
+                            <p class="par">1h 48min<br>Comedia, Acción<br>Estrenada en 2016<br>Dirigida por Tim Miller<br>Guion Rhett Reese, Paul Wernick<br>Reparto Ryan Reynolds, Morena Baccarin, Ed Skrein</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="comedia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/rubias.jpg" alt="Imagen 8" class="imagen-hover">
+                    <p class="sip">Donde Estan Las Rubias</p>
+                    <button class="modal-button" data-modal="modal8">Más+</button>
+                    <div class="modal-container" id="modal8">
+                        <div class="modal-content">
+                        <div>
+                            <p>White Chicks es una película estadounidense de comedia de 2004, dirigida por Keenen Ivory Wayans, protagonizada por Shawn Wayans y Marlon Wayans. La película fue producida por Revolution Studios y distribuida por Sony Pictures Entertainment; en la trama de la película dos hermanos y agentes del FBI actúan como señuelos de unas famosas hermanas de clase alta para resolver un caso al mismo tiempo que buscan probar su valor ante sus demás compañeros, viéndose forzados a personificar a las mujeres en varios aspectos de su vida privada en el proceso.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/UxER50XHW-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                      
+                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Donde Estan las Rubias</p>
+                            <p class="par">1h 49min<br>Comedia<br>Estrenada en 2004<br>Dirigida por James Foley<br>Guion Keenen Ivory Wayans<br>Reparto Shawn Wayans, Marlon Wayans</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="Pcaj" category="fantasia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/castillo.jpg" alt="Imagen 9" class="imagen-hover">
+                    <p class="sip">El Increíble Castillo Vagabundo</p>
+                    <button class="modal-button" data-modal="modal9">Más+</button>
+                    <div class="modal-container" id="modal9">
+                        <div class="modal-content">
+                        <div>
+                            <p>Una hacendosa joven llamada Sophie, trabaja sin descanso en la tienda de sombreros de su familia. Un día se topa con Howl un misteriosos y atractivo mago que esconde algo. Este inocente encuentro, enfurece a la Bruja de las Landas y arroja un maleficio contra la inocente joven, convirtiéndola en una anciana de 90 años. Sophie está desesperada y como no puede pedir ayuda a su familia o amigos porque no la reconocen, decide huir en busca de Howl. Sus esfuerzos por romper la maldición la conducen al Castillo ambulante, donde la ayudarán el aprendiz Markl y el guardián Calcifer. Junto a ellos y a Howl, Sophie vivirá emocionantes aventuras hasta toparse de nuevo con la temida bruja.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/BCDEOoNYW18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">El increíble Castillo Vagabundo</p>
+                            <p class="par">1h 59min<br>Fantasía, Animación<br>Estrenada en 2006<br>Dirigida por Hayao Miyazaki<br>Guion Hayao Miyazaki<br>Reparto Chieko Baishô, Takuya Kimura</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Pcaj" category="accion">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/eltrasportador.jpg" alt="Imagen 10" class="imagen-hover">
+                    <p class="sip">El Trasportador</p>
+                    <button class="modal-button" data-modal="modal10">Más+</button>
+                    <div class="modal-container" id="modal10">
+                        <div class="modal-content">
+                        <div >
+                            <p>Frank siempre está disponible, y con él su rapidísimo coche, para entregas de alto riesgo. Esto es debido a que a lo largo de su trayectoria profesional este despiadado conductor se ha curtido en más de mil batallas donde se ha enfrentado a individuos realmente despiadados, que suponen lo peor del ser humano. Al igual que los demás transportistas, obedece las tres reglas de oro: no hacer preguntas, no abrir los paquetes y, sobre todo, no romper los dos mandatos iniciales si no quieres terminar muerto.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/7FnbLyv2oio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">El Trasportador</p>
+                            <p class="par">1h 32min<br>Acción, Crimen<br>Estrenada en 2003<br>Dirigida por Corey Yuen, Louis Leterriery<br>Guion Robert Mark Kamen<br>Reparto Jason Statham, François Berléand</p>
+                        </div>
+                    </div>
+                </div>   
+                <div class="Pcaj" category="fantasia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/chi.jpg" alt="Imagen 11" class="imagen-hover">
+                    <p class="sip">El Viaje de Chihiro</p>
+                    <button class="modal-button" data-modal="modal11">Más+</button>
+                    <div class="modal-container" id="modal11">
+                        <div class="modal-content">
+                        <div>
+                            <p>Chihiro es una niña de diez años que está mudándose con sus padres a un nuevo hogar. Por el camino, la familia se topa con un enorme edificio rojo en cuyo centro se abre un largo túnel. Al otro lado del pasadizo se dibuja una ciudad fantasma. En el restaurante abandonado de esta ciudad, los padres de Chihiro encuentran una gran variedad de platos deliciosos y deciden quedarse a comer, pero, al probar bocado, se transforman en cerdos. Presa del pánico, Chihiro huye y empieza a desmaterializarse poco a poco</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/5Fgq4Osh6XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">El Viaje de Chihiro</p>
+                            <p class="par">2h 05min<br>Fantasía, Animación<br>Estrenada en 2002<br>Dirigida por Hayao Miyazaki<br>Guion Hayao Miyazaki<br>Reparto Rumi Hiiragi, Miyu Irino, Mari Natsuki</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="suspenso">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/intrusion2.jpg" alt="Imagen 12" class="imagen-hover">
+                    <p class="sip">Intrusion</p>
+                    <button class="modal-button" data-modal="modal12">Más+</button>
+                    <div class="modal-container" id="modal12">
+                        <div class="modal-content">
+                        <div>
+                            <p>Freida Pinto (Amor. Boda. Azar) y Logan Marshall-Green (Upgrade) interpretan a un feliz matrimonio que decide mudarse a un pequeño pueblo y abandonar su estresante vida en la ciudad. Lo que prometía ser una nueva etapa se va a convertir en su peor pesadilla. Un día sufren un peligroso y violento allanamiento de morada. Desde ese momento, la mujer comenzará a sospechar de todo el mundo.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/DTUsaltziFA?si=Pn7muVcTJj6VW-xu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="par">Intrusion</p>
+                            <p class="par">1h 32min<br>Suspense<br>Estrenada en 2021<br>Dirigida por Adam Salky<br>Guion Chris Sparling<br>Reparto Freida Pinto, Logan Marshall-Green, Robert John Burke</p>
+                        </div>
+                    </div>
+                </div>   
+                <div class="Pcaj" category="terror">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/it.webp" alt="Imagen 13" class="imagen-hover">
+                    <p class="sip">IT</p>
+                    <button class="modal-button" data-modal="modal13">Más+</button>
+                    <div class="modal-container" id="modal13">
+                            <div class="modal-content">
+                            <div>
+                                <p>Han pasado casi 30 desde que el Club de Perdedores formado por Bill, Berverly, Richie, Ben, Eddie, Mike y Stanley se enfrentaran al macabro y despiadado Pennywise (Bill Skarsgård). En cuanto tuvieron oportunidad abandonaron el pueblo de Derry, en el estado de Maine, que tantos problemas les había ocasionado en el pasado. Sin embargo, ahora de adultos parece que no pueden escapar de su antigua vida.</p>
+                            </div>
+                            <iframe width="380" height="255" src="https://www.youtube.com/embed/o1sQbtZpsic?si=Uy5k0V90bO12fUXN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                            </div>
+                        </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="par">IT</p>
+                            <p class="par">2h 50min<br>Terror<br>Estrenada en 2019<br>Dirigida por Andy Muschietti<br>Guion Gary Dauberman<br>Reparto Bill Skarsgård, James McAvoy, Jessica Chastain</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="comedia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/la_mascara.jpg" alt="Imagen 14" class="imagen-hover">
+                    <p class="sip">La Mascara</p>
+                    <button class="modal-button" data-modal="modal14">Más+</button>
+                    <div class="modal-container" id="modal14">
+                        <div class="modal-content">
+                        <div>
+                            <p>Standley Ipkiss (Jim Carrey, 'El show de Truman') vive en Edge City y trabaja en un banco. Tiene una vida aburrida y todo el mundo le toma el pelo y, aunque lo sabe, es tan pusilánime que lo permite. Sus únicos amigos son su perro Milo y Charlie. Éste cree que es hora de que su amigo espabile y decide llevarle al Cabaret Coco cuyo dueño, Dorian Tyrell (Peter Greene), tiene una novia (Cameron Díaz, 'Noche y Día') que tratará de descifrar la caja fuerte del banco donde trabaja el protagonista.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/d_f-htgnr-M?si=LmuIUk6V9ZFzMT-B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">La Mascara</p>
+                            <p class="par">1h 40min<br>Comedia, Fantasía<br>Estrenada en 1994<br>Dirigida por Chuck Russell<br>Guion Mike Werb, Michael Fallon<br>Reparto Jim Carrey, Cameron Diaz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="terror">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/demo.jpg" alt="Imagen 15" class="imagen-hover">
+                    <p class="sip">La Noche del Demonio: La Puerta Roja</p>
+                    <button class="modal-button" data-modal="modal15">Más+</button>
+                    <div class="modal-container" id="modal15">
+                            <div class="modal-content">
+                            <div>
+                                <p>Nueva entrega de la saga de terror paranormal Insidious protagonizada por la familia Lambert. Lo que Josh desea por encima de todo es ser un buen padre, tener una buena relación con su hijo ya universitario Dalton. Pero últimamente a Josh le asaltan pesadillas, extrañas apariciones. Su cerebro está confuso y ve cosas espeluznantes. Dalton también empezará a tener estas extrañas ensoñaciones, imágenes que le recuerdan lo que le ocurrió cuando tenia 10 años y estuvo en coma. Padre e hijo deberán buscar en su memoria, eventos sobre su pasado, secretos que guardaron y que ahora les persiguen, profundizar en el Más Allá, en el equilibrio entre la luz y la oscuridad.</p>
+                            </div>
+                            <iframe width="380" height="255" src="https://www.youtube.com/embed/ujpQGz3MBfU?si=wX1rw2-COVt7oTKH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                            </div>
+                        </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">La Noche del Demonio</p>
+                            <p class="par">1h 47min<br>Terror, Misterio<br>Estrenada en 2023<br>Dirigida por Patrick Wilson<br>Guion Scott Teems<br>Reparto Patrick Wilson, Rose Byrne, Ty Simpkins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="comedia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/no_se_aceptan_devoluciones.jpg" alt="Imagen 16" class="imagen-hover">
+                    <p class="sip">No Se Aceptan Devoluciones</p>
+                    <button class="modal-button" data-modal="modal16">Más+</button>
+                    <div class="modal-container" id="modal16">
+                            <div class="modal-content">
+                            <div>
+                                <p>Valentín (Eugenio Derbez) es un residente de Acapulco que vive una vida sin complicaciones, disfrutando de su soltería lo máximo que puede. Todo va a cambiar, sin embargo, cuando una mujer con la que tuvo una aventura hace tiempo, deja un bebé en la puerta de su casa y se va sin dejar rastro. Valentín viaja desde México a Los Ángeles para buscarla pero no la encuentra. Sin embargo, lo que sí que encuentra es un nuevo hogar en el que instalarse con su recién descubierta hija, Maggie (Loreto Peralta).</p>
+                            </div>
+                            <iframe width="380" height="255" src="https://www.youtube.com/embed/yTvyNBtrOY4?si=HNgU0Gzp97iFJ9U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">No Se Aceptan Devoluciones</p>
+                            <p class="par">2h 2min<br>Comedia, Drama<br>Estrenada en 2013<br>Dirigida por Eugenio Derbez<br>Guion Guillermo Ríos<br>Reparto Eugenio Derbez, Karla Souza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="suspenso">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/op.jpg" alt="Imagen 17" class="imagen-hover">
+                    <p class="sip">Oppenheimer</p>
+                    <button class="modal-button" data-modal="modal17">Más+</button>
+                    <div class="modal-container" id="modal17">
+                            <div class="modal-content">
+                            <div>
+                                <p>Drama biográfico de corte histórico basado en American Prometheus, la biografía escrita por Kai Bird y Martin J. Sherwin en torno a la figura del científico J. Robert Oppenheimer y su rol en la creación y desarrollo de la bomba atómica. 16 de julio de 1945, en el desierto de Nuevo México se detona en secreto la primera bomba atómica. En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer (Cillian Murphy), al frente del proyecto Manhattan, lidera los ensayos nucleares para construir la bomba atómica para su país.</p>
+                            </div>
+                            <iframe width="380" height="255" src="https://www.youtube.com/embed/MVvGSBKV504?si=9_nt5yp3tVJSe_XB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Oppenheimer</p>
+                            <p class="par">3h 01min<br>Suspense, Histórico<br>Estrenada en 2023<br>Dirigida por Christopher Nolan<br>Guion Christopher Nolan<br>Reparto Cillian Murphy, Emily Blunt, Matt Damon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="accion">
+                    <div class="contenedor-imagen"  class="imagen-hover">
+                    <img src="./imgP/furiosos.jpg" alt="Imagen 18" class="imagen-hover">
+                    <p class="sip">Rapidos y Furiosos 9</p>
+                    <button class="modal-button" data-modal="modal18">Más+</button>
+                    <div class="modal-container" id="modal18">
+                        <div class="modal-content">
+                        <div>
+                            <p>En la cinta de acción Rápidos y furiosos 9, dirigida por Justin Lin (Star Trek: Sin límites), Dominic Torreto está intentando llevar una vida pacífica, refugiado en una cómoda casa en el campo, tratando de criar a su hijo pequeño Brian, con la ayuda de su novia Letty. Sin embargo, la tranquilidad que anhela está lejos de sus manos y tras su intervención en la captura de la peligrosa hacker y terrorista Cipher, una nueva amenaza surge para cazarlo y terminarlo en la figura de Jakob, un peligroso asesino y piloto que, en realidad, es su propio hermano menor.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/3YNwcdVkpZQ?si=9v6w8E5zy950jrTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Rapidos y Furiosos 9</p>
+                            <p class="par">2h 23min<br>Acción<br>Estrenada en 2021<br>Dirigida por Justin Lin<br>Guion Daniel Casey<br>Reparto Vin Diesel, Michelle Rodriguez, Jordana Brewster</p>         
+                        </div>
+                    </div>
+                </div> 
+                <div class="Pcaj" category="accion">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/scarface.jpg" alt="Imagen 19" class="imagen-hover">
+                    <p class="sip">Sacarface</p>
+                    <button class="modal-button" data-modal="modal19">Más+</button>
+                    <div class="modal-container" id="modal19">
+                        <div class="modal-content">
+                        <div>
+                            <p>En el año 1980, el levantamiento del bloqueo de Puerto Muriel por Fidel Castro hace que se produzca un éxodo masivo de cubanos hacia los Estados Unidos. Uno de esos cubanos es Tony Montana (Al Pacino), quien está cansado de la miseria y persigue el clásico 'sueño americano'. Sin embargo, todos los comienzos son duros ,y tras ser recluido y escapar del confinamiento, Tony su amigo Manny se encuentran trabajando en un puesto de comida ambulante.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/7pQQHnqBa2E?si=fDINS6RmYAVx6hEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Sacarface</p>
+                            <p class="par">2h 45min<br>Acción, Drama<br>Estrenada en 1984<br>Dirigida por Brian De Palma<br>Guion Oliver Stone<br>Reparto Al Pacino, Michelle Pfeiffer</p>         
+                        </div>
+                    </div>
+                </div>  
+                <div class="Pcaj" category="romance">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/standb.jpg" alt="Imagen 20" class="imagen-hover">
+                    <p class="sip">Stand De Los Besos</p>
+                    <button class="modal-button" data-modal="modal20">Más+</button>
+                    <div class="modal-container" id="modal20">
+                        <div class="modal-content">
+                        <div>
+                            <p>A pesar de varios intentos, Elle Evans (Joey King) jamás ha sido besada. Esta estudiante de preparatoria de 16 años, decide poner un stand de besos, para recaudar fondos, sin imaginar que Noah (Jacob Elordi) -el chico más guapo de la escuela y su eterno crush- terminaría besándola. Después de besarse en el stand de los besos, ambos sostienen un romance secreto, pero el poblema -más allá de estarse besando con el chico más popular- radica en que es el hermano mayor de su mejor amigo, Lee (Joel Courtney). Elle tendrá que decidir entre su mejor amigo de la infancia o tener un romance público con Noah.</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/L5nYYBxg52A?si=_zTbW06xfhc7ozgt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Stand De Los Besos</p>
+                            <p class="par">1h 45min<br>Romántico, Comedia<br>Estrenada en 2020<br>Dirigida por Vince Marcello<br>Guion Vince Marcello<br>Reparto Joey King, Joel Courtney, Jacob Elordir</p>        
+                        </div>
+                    </div>
+                </div>  
+                <div class="Pcaj" category="comedia">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/mario.jpg" alt="Imagen 21" class="imagen-hover">
+                    <p class="sip">Super Mario Bros</p>
+                    <button class="modal-button" data-modal="modal21">Más+</button>
+                    <div class="modal-container" id="modal21">
+                            <div class="modal-content">
+                            <div>
+                                <p>En la década de 1980, Nintendo lanzó Super Mario Bros. Que se convirtió en uno de los videojuegos más icónicos de todos los tiempos en la consola NES. El plomero pixelado, Mario, y su búsqueda para salvar a la princesa Peach demostraron ser un gran éxito, uno que pasaría de las consolas de juegos a las salas de cine. Basado en este super universo, llega el turno en Super Mario Bros: la película, donde mientras trabajan bajo tierra para reparar una tubería que está afectando la ciudad, los plomeros de Brooklyn Mario y su hermano Luigi son transportados a través de una tubería misteriosa y vagan por un mundo nuevo y mágico.</p>
+                            </div>
+                            <iframe width="380" height="255" src="https://www.youtube.com/embed/SvJwEiy2Wok?si=NS7TeoxUjxdLz68o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Super Mario Bros</p>
+                            <p class="par">1h 32min<br>Comedia, Animación<br>Estrenada en 2023<br>Dirigida por Aaron Horvath<br>Guion Matthew Fogel<br>Reparto Chris Pratt, Jack Black, Anya Taylor-Joy</p>        
+                        </div>
+                    </div>
+                </div>
+                <div class="Pcaj" category="drama">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/viaje.jpg" alt="Imagen 22" class="imagen-hover">
+                    <p class="sip">La Vida De Pi</p>
+                    <button class="modal-button" data-modal="modal22">Más+</button>
+                    <div class="modal-container" id="modal22">
+                            <div class="modal-content">
+                            <div>
+                                <p>Pi Patel (Suraj Sharma) es un joven cuyo padre es el guardián del zoológico de Pondicherry, en la India. Toda su familia embarcará en un buque de carga gigantesco con destino a Canadá, con la intención de buscar una vida mejor en un nuevo país. Sin embargo, las cosas no saldrán como esperaban, ya que durante la travesía, el barco naufragará, quitándole la vida a prácticamente todos sus miembros. Solo sobrevivirá Pi, que logrará alcanzar una balsa en la que poder refugiarse de morir ahogado. Una barcaza que no se encuentra precisamente vacío. </p>
+                            </div>
+                            <iframe width="380" height="255" src="https://www.youtube.com/embed/gbGBK-wLtO8?si=SYP5RzvfyJRhp47F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>     
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">La Vida De Pi</p>
+                            <p class="par">2h 05min<br>Drama, Aventura<br>Estrenada en 2012<br>Dirigida por Ang Lee<br>Guion David Magee<br>Reparto Suraj Sharma, Irrfan Khan, Adil Hussain</p>        
+                        </div>
+                    </div>
+                </div> 
+                <div class="Pcaj" category="suspenso">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/vertigo.jpg" alt="Imagen 23" class="imagen-hover">
+                    <p class="sip">Vertigo</p>
+                    <button class="modal-button" data-modal="modal23">Mas+</button>
+                    <div class="modal-container" id="modal23">
+                        <div class="modal-content">
+                        <div>
+                            <p>Para las dos mejores amigas Becky y Hunter, el sentido de la vida se trata de conquistar los miedos y superar los límites. Sin embargo, después de escalar 600 metros hasta la cima de una torre de radio remota y abandonada, de forma sorprendente se encuentran varadas sin forma alguna de bajar a tierra. Ahora, totalmente alejadas de la civilización, las habilidades de escalada expertas de Becky y Hunter se pondrán a prueba mientras luchan desesperadamente por sobrevivir a los elementos</p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/uMOMds9WDWM?si=LZI2-D6_v-ovQGLX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Vertigo</p>
+                            <p class="par">1h 47min<br>Suspense<br>Estrenada en 2022<br>Dirigida por Scott Mann<br>Guion Jonathan Frank<br>Reparto Grace Caroline Currey, Virginia Gardner</p>        
+                        </div>
+                    </div>
+                </div> 
+                <div class="Pcaj" category="romance">
+                    <div class="contenedor-imagen" class="imagen-hover">
+                    <img src="./imgP/yoantes.jpg" alt="Imagen 24" class="imagen-hover">
+                    <p class="sip">Yo Antes De Ti</p>
+                    <button class="modal-button" data-modal="modal24">Más+</button>
+                    <div class="modal-container" id="modal24">
+                        <div class="modal-content">
+                        <div>
+                            <p>Louise Clark (Emilia Clarke) es una chica que conoce bien el lugar en el que vive, aunque no sabe exactamente qué es lo que pretende hacer con su vida. Ella cambia de trabajo con frecuencia, aunque esto no impide que sea feliz. Cuando la madre de Will Traynor (Sam Claflin), un adinerado banquero cuadraplégico, la contrata para que cuide a su hijo, la tranquilidad de Lou se ve alterada. ¿La razón? La amargura de Will, quien tras sufrir un aparatoso accidente ha perdido las ganas de vivir. </p>
+                        </div>
+                        <iframe width="380" height="255" src="https://www.youtube.com/embed/IoQPUqvcmXY?si=R7-r10EGAilvcK8y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                        <div class="ventana-flotante" id="ventana-flotante">
+                            <p class="parr">Yo Antes De Ti</p>
+                            <p class="par">1h 50min<br>Romántico, Drama<br>Estrenada en 2016<br>Dirigida por Thea Sharrock<br>Reparto Emilia Clarke, Sam Claflin, Janet McTeer</p>        
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    <section>
+        <script src="flo.js"></script>     
+        <script src="../busqueda/bus.js"></script> 
+        <script src="../categorias/cate.js"></script>     
+    </section>
+    <footer>
+        <div id="fo">
+           <p>&copy 2023 Future Vision Code</p>
+           <p>FutureVisionCode@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
