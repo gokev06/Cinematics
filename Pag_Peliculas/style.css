@@ -179,6 +179,7 @@ article {
     .carrusel{
         width: 100%;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .carrusel img{
@@ -187,6 +188,7 @@ article {
 
     article{
         margin-top: 300px;
+        justify-content: center;
     }
 
     .carrusel img:hover{
