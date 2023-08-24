@@ -331,6 +331,7 @@ footer{
     .Pcaj {
         width: 156px;
         height: 241px;
+        margin-top: 150px;
         }
 
     iframe{
@@ -350,4 +351,7 @@ footer{
         flex-direction: column;
     }
 
+    .contenedor-imagen img{
+        height: 200px;
+    }
 }
