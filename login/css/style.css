@@ -150,7 +150,7 @@ nav{
     }
 
     .cajas_trasera{
-        max-width: 350px;
+        max-width: 300px;
         height: 350px;
         flex-direction: column;
         margin: auto;
@@ -192,4 +192,9 @@ nav{
     .login_registro form{
         width: 300px;
     }
+
+    .cajas_trasera{
+       max-width: 250px;
+    }
+
 }
