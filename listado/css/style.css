@@ -183,6 +183,10 @@ header a:hover{
     display: inline-block;
     margin: 10px;
 }
+.contenedor-imagen img{
+    height: 250px;
+    width: 350px;
+}
 .imagen-hover {
     max-width: 100%;
     height: auto;
@@ -280,6 +284,7 @@ footer{
     .modal-content{
         flex-direction: column;
     }
+
 }
 
 
@@ -302,6 +307,9 @@ footer{
     .modal-content {
         width: 90%;
         }
+        #cajP1 {
+            margin-left: -14px;
+            }
 }
 
 @media screen  and (max-width:480px){
@@ -342,9 +350,7 @@ footer{
         flex-direction: column;
     }
 
-    #cajP1 {
-        margin-left: -14px;
-        }
+
         .Pcaj {
         width: 152px;
         }

@@ -145,8 +145,7 @@ nav{
 
 @media screen and (max-width:850px) {
     main{
-        margin-top: 50px;
-
+        margin-top: 50px; 
     }
 
     .cajas_trasera{
@@ -157,6 +156,7 @@ nav{
     }
 
     .cajas_trasera div{
+        
         margin: 0;
         position: absolute;
     }
@@ -169,7 +169,7 @@ nav{
     }
 
     .login_registro form{
-        position: relative;
+        position: absolute;
         width: 400px;
     }
     .bienvenida_iniciosesion{
@@ -190,11 +190,19 @@ nav{
     }
 
     .login_registro form{
-        width: 300px;
+        width: 100%;
     }
 
     .cajas_trasera{
-       max-width: 250px;
+        max-width: 90%;
+        display: flex;
+        align-items: center;
     }
 
+}
+
+@media screen and (max-width:768px) {
+    .cajas_trasera div h1 {
+        font-size: 45px;
+        }
 }
