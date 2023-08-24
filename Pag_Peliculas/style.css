@@ -168,6 +168,7 @@ article {
     .A{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 
     h1 {
@@ -176,18 +177,24 @@ article {
 }
 
 @media screen  and (max-width:480px){
-    .carrusel{
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    .carrusel {
+        height: auto;
+        margin-top: 35px;
+        margin-bottom: 22px;
+        }
 
     .carrusel img{
-        width: 30%;
+        width: 40%;
     }
 
+    .imgA {
+        width: 100px;
+        height: 150px;
+        margin-left:10px;
+        margin-right: 10px;
+        }
+    
     article{
-        margin-top: 300px;
         justify-content: center;
     }
 
