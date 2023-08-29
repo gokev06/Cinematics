@@ -249,6 +249,15 @@ header a:hover{
     /* box-shadow: 0px 0px 8px #261416c0; */
 } 
 
+.modal-content p{
+    padding: 20px 30px;
+    text-align: start;
+}
+
+iframe{
+    width: 600%;
+    height: 300px;
+}
 footer{
     margin-top: 50px;
 }
@@ -283,6 +292,10 @@ footer{
     
     .modal-content{
         flex-direction: column;
+    }
+
+    #cajP1{
+        justify-content: center;
     }
 
 }
@@ -354,4 +367,11 @@ footer{
     .contenedor-imagen img{
         height: 200px;
     }
+
+.Pcaj {
+margin: 0 0px 0px;
+justify-content: center;
+margin-left: 15px;
+margin-bottom: 100px;
+}
 }

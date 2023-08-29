@@ -112,6 +112,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     margin-left: 100px;
+    margin-bottom: 100px;
 
 }
 .imagen-hover{
@@ -218,6 +219,14 @@ nav{
     /* border-radius: 0% ; */
     /* box-shadow: 0px 0px 8px #261416c0; */
 } 
+.modal-content p{
+    padding: 20px 30px;
+}
+
+iframe{
+    width: 600%;
+    height: 300px;
+}
 
 #fo{
     background: linear-gradient(to right, rgba(58, 2, 2, 0.944) 20%, rgba(36, 2, 2, 0.949) 60%);
@@ -253,7 +262,7 @@ nav{
 
     header a:hover {
         width: 60%;
-        }
+    }
 
     #hea {
         width: 70%;
@@ -272,53 +281,59 @@ nav{
 
     h1 {
         margin: 5% 4%;
-        }
-        .modal-content {
-            width: 90%;
-            }
-            .Pcaj {
-                width: 156px;
-                height: 241px;
-                }
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+        
+    .Pcaj {
+        width: 156px;
+        height: 241px;
+    }
     
 }
+
 
 @media screen  and (max-width:480px){
     .carrusel {
         height: auto;
         margin-top: 35px;
         margin-bottom: 22px;
-        }
+    }
 
     .imgA {
         width: 100px;
         height: 150px;
         margin-left:10px;
         margin-right: 10px;
-        }    
-        iframe{
-            width: 100%;
+    }   
+
+    iframe{
+        width: 100%;
+    }
     
-        }
+    .modal-container p{
+        font-size: 13px;
+    }
     
-        .modal-container p{
-            font-size: 13px;
-        }
+    .A {
+        width: 80%;
+    }
     
-        .A {
-            width: 80%;
-        }
+    #fo {
+        flex-direction: column;
+    }
     
-        #fo {
-            flex-direction: column;
-        }
-    
-        #cajP1 {
-            margin-left: -14px;
-            }
-            .Pcaj {
-            width: 152px;
-            }
+    #cajP1 {
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .Pcaj {
+        width: 152px;
+    }
 
     .carrusel img:hover{
         width: 100px;
