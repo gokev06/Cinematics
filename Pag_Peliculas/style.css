@@ -29,7 +29,7 @@ header a:hover{
 #hea {
     display: flex;
     justify-content: space-around;
-    width: 35%;
+    width: 54%;
     margin: 0% 6% 0% 0%;
 }
 h1 {
@@ -54,6 +54,18 @@ h1 {
     background:rgba(236, 114, 114, 0.871);
     transition: .2s;
     padding: 12px;
+}
+
+.active{
+    background-color: transparent;
+    border: 1px solid rgb(132, 2, 17);
+    text-align: center;
+    border-radius: 20px ;
+    color: aliceblue;
+    width: 31%;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
 }
 a{
     background-color: transparent;
@@ -212,19 +224,22 @@ nav{
     margin: 10% auto;
     padding: 1%;
     border: none;
-    width: 65%;   
+    width: 50%;   
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     /* border-radius: 0% ; */
     /* box-shadow: 0px 0px 8px #261416c0; */
 } 
 .modal-content p{
+    width: 400px;
     padding: 20px 30px;
+    text-align: start;
 }
 
 iframe{
-    width: 600%;
+    margin-left: 80px;
+    width: 500px;
     height: 300px;
 }
 
@@ -243,6 +258,9 @@ iframe{
 @media screen and (max-width:920px) {
     .modal-content{
         flex-direction: column;
+    }
+    #hea {
+        width: 79%;
     }
 }
 @media screen and (max-width:768px){
@@ -265,7 +283,8 @@ iframe{
     }
 
     #hea {
-        width: 70%;
+        margin-top: 20px;
+        width: 100%;
     }
 
     .logoA {
@@ -302,6 +321,21 @@ iframe{
         margin-bottom: 22px;
     }
 
+    .contenedor-imagen img {
+        height: 175px;
+        }
+
+        #hea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .active {
+            width: 50%;
+            margin-top: 20px;
+        }
+
     .imgA {
         width: 100px;
         height: 150px;
@@ -310,11 +344,13 @@ iframe{
     }   
 
     iframe{
-        width: 100%;
+        width: 90%;
+        margin-left: 0px;
     }
     
     .modal-container p{
-        font-size: 13px;
+        font-size: 15px;
+        width: auto;
     }
     
     .A {
